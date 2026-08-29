@@ -24,4 +24,5 @@ module FA_Gate(
   xor (ps,  a,   b);
 
 
+
 endmodule
