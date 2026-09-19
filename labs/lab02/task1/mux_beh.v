@@ -6,9 +6,11 @@
 // a variable in behavioral modeling.
 
 module mux_beh (
-  input  I0,
-  input  I1,
-  input  S,
+  input       I0,
+  input       I1,
+  input       S,
+  // An `always` block assigns procedurally, so Y must retain variable (reg)
+  // semantics.  A wire may only be driven by a continuous/module driver.
   output reg Y
 );
 
